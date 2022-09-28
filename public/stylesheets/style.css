@@ -1,0 +1,41 @@
+body {
+  margin: 5% 0;
+  counter-reset: Serial;
+}
+
+.table-data th::before {
+  counter-increment: Serial;
+  content: "" counter(Serial) ": ";
+}
+
+*,
+::after,
+::before {
+  box-sizing: unset;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.card {
+  margin: 3px;
+}
+
+.description {
+  height: 100px;
+  overflow: hidden;
+  font-size: small;
+}
+
+.card-body {
+  padding-bottom: 1px;
+}
+
+.card-img-top {
+  object-fit: contain;
+}
+
+.head-title th {
+  width: 50px;
+}
